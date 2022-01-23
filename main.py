@@ -6,22 +6,22 @@ import keep_alive
 
 command_list = '''Eu respondo você pelos seguintes comandos:
 **!ajuda** - Listo todos os meus comandos.
-**!tarefas** - Listo todas as tasks semanais e a pontuação de cada uma.
-**!minhas-tarefas** - Listo as tasks que você já fez, as que faltam fazer, e a sua pontuação.
-**!fazer-tarefa** NÚMERO - Diz pra mim qual o número da task que você fez.
+**!tarefas** - Listo todas as tarefas semanais e a pontuação de cada uma.
+**!minhas-tarefas** - Listo as tarefas que você já fez, as que faltam fazer, e a sua pontuação.
+**!fazer-tarefa** NÚMERO - Diz pra mim qual o número da tarefa que você fez.
 **!desfazer-tarefa** NÚMERO - Puts, marcou errado? Fala pra mim o número que eu cancelo ela!
 '''
 
 adm_command_list = '''Aqui é o grupo dos administradores e os comandos são tops!
 **!ajuda** - Listo todos os meus comandos de administrador.
-**!tarefas** - lista as tasks
-**!adicionar-tarefa** PONTOS DESCRICAO - diga a pontuação e fale sobre a task
-**!apagar-tarefa** ID - deleta a task com o id indicado.
-**!editar-tarefa** ID PONTOS DESCRIÇÃO - edita a task com o id indicado.
-**!resetar-pontos** - reseta as tasks de todo mundo.
-**!usuarios** - lista os usuarios e as pontuacoes de cada um.
-**!info-usuario** USER_ID - mostra as tasks feitas do usuário de id indicado.
-**!limpar-tarefas** - apaga todas as tasks (CUIDADO)
+**!tarefas** - lista as tarefas.
+**!adicionar-tarefa** PONTOS DESCRICAO - diga a pontuação e fale sobre a tarefa
+**!apagar-tarefa** ID - deleta a tarefa com o id indicado.
+**!editar-tarefa** ID PONTOS DESCRIÇÃO - edita a tarefa com o id indicado.
+**!resetar-pontos** - reseta as tarefas de todo mundo.
+**!usuarios** - lista os usuários e as pontuações de cada um.
+**!info-usuario** USER_ID - mostra as tarefas feitas do usuário de id indicado.
+**!limpar-tarefas** - apaga todas as tarefas (CUIDADO)
 '''
 
 client = discord.Client()
