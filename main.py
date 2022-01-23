@@ -268,9 +268,20 @@ Tarefas para fazer:
                 return
             if message.content.startswith(('!help', '!ajuda')):
                 await message.channel.send(
-                    'Opa, tudo bom? Eu sou o BOT da República NFT! Para interagir comigo, use o comando !bot que te chamarei na DM com mais informações!'
+                    '''Opa, tudo bom? Eu sou o BOT da República NFT!
+Para interagir comigo, use o comando **!bot** que te chamarei na DM com mais informações, ou **!ranking** para ver a pontuação da galera!'''
                 )
                 return
+            if message.content.startswith('!ranking'):
+                print(list(db['users'].values()))
+                sorted_user_list = list(sorted(db['users'].values(), key=lambda user: int(user['points']),reverse=True))
+                user_list_message = [f"{user['name']} - points: {user['points']}" for user in sorted_user_list]
+                if len(user_list_message) == 0:
+                    await message.channel.send('Sem usuários cadastrados')
+                    return
+                await message.channel.send('\n'.join(user_list_message))
+                return
+                
 
 
 
